@@ -1,0 +1,6 @@
+[book]
+authors = ["nd6k"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Compsci Project API Documentation"
