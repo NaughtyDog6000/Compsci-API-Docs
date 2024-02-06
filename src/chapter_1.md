@@ -6,10 +6,6 @@
 
 ## Auth
 
-```rust
-    println!("Hello world!");
-```
-
 ```javascript,editable,hidelines=///
 ///const mock_response = {"reps": "fun" };
 fetch("https://api.robbiecornock.com/ping", {
@@ -44,12 +40,6 @@ Mock failed response from server
 
 ```javascript
 fetch("https://api.robbiecornock.com/");
-/// // success:
-/// { "fun": "daf" }
-///
-///
-/// // fail:
-/// {{#include ./json/test.json}}
 ```
 
 ```json

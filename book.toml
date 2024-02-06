@@ -5,11 +5,14 @@ multilingual = false
 src = "src"
 title = "Compsci Project API Documentation"
 
+[output.html]
+default-theme = "coal"
+git-repository-url = "https://github.com/NaughtyDog6000/rust-backend/tree/main"
+
 [output.html.playpen]
 editable = true
 editor = "ace"
 line-numbers = true
-
 
 [output.html.code.hidelines]
 javascript = "///" 
@@ -17,5 +20,4 @@ javascript = "///"
 [output.html.fold]
 enable = true
 
-[output.html]
-git-repository-url = "https://github.com/NaughtyDog6000/rust-backend/tree/main"
+
