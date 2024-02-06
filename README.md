@@ -16,4 +16,4 @@ cargo install mdbook
 
 ## Serving
 
-mdbook serve -p 3001
+mdbook serve -p 8008
