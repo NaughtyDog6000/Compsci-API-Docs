@@ -2,6 +2,36 @@
 
 =======
 
+## API Response Guide
+
+The response from the API should always come in the forms below[^note], with the apropriate status code to if the request was successful or a failure.
+
+**Success:**
+
+status code: 200
+
+```json
+{
+  "response": "message",
+  "data": {
+    "...": "...."
+  }
+}
+```
+
+**Fail:**
+
+status code: 400, 401, 4XX
+
+```json
+{
+  "response": "something went wrong!",
+  "data": {
+    "...": "...."
+  }
+}
+```
+
 ## http request prerequisites
 
 ### making a request
@@ -92,7 +122,7 @@ fetch("https://api.robbiecornock.com", {
 // will work in a website's JS
 fetch("https://api.robbiecornock.com", {
   method: "POST",
-  cors: "cors",
+  mode: "cors",
 });
 ```
 
@@ -127,3 +157,5 @@ Post Request:
   "response": "HELLO"
 }
 ```
+
+[^note]: the example routes ("/" and "/ping") dont follow the format for simplicity.
