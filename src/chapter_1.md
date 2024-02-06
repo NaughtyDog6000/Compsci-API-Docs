@@ -74,6 +74,28 @@ Response from API:
 
 ### cors
 
+if you ran the previous examples in a web browser, it wouldnt run and with some weird error.
+
+This is because when sending requests to the api in a browser from another website,
+the browser will only allow the request to be used if both the server and the client have the correct cors policy,
+the api has the most permissive cors policy and (_shouldn't be_) isnt an issue.
+to tell the browser that making a request to the api is allowed, you pass the cors mode into the configuration of the fetch request.
+
+```javascript
+// wont work in a website's JS
+fetch("https://api.robbiecornock.com", {
+  method: "POST",
+});
+```
+
+```javascript
+// will work in a website's JS
+fetch("https://api.robbiecornock.com", {
+  method: "POST",
+  cors: "cors",
+});
+```
+
 ### sending data
 
 ### authorisation
