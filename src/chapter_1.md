@@ -33,3 +33,9 @@ let body = reqwest::get("https://www.rust-lang.org")
 
 println!("body = {:?}", body);
 ```
+
+```javascript,editable
+
+    fetch("https://api.robbiecornock.com");
+    #console.log()
+```

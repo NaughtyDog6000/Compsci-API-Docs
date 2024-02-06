@@ -6,6 +6,8 @@
 
 ## [used for this project](https://nd6k.uk)
 
+## [Summary](./src/SUMMARY.md)
+
 The Raw md files and images used for the documentation of the API using mdBook.
 
 ## Installation
