@@ -35,3 +35,10 @@
         "response": "pong GET"
     # })
 ```
+
+```javascript,editable
+// This is a comment, and is ignored by the compiler
+// You can test this code by clicking the "Run" button over there ->
+
+console.log("Hello World");
+```
