@@ -19,7 +19,6 @@ fetch("https://api.robbiecornock.com/ping", {
 console.log(mock_response);
 ```
 
-
 ```javascript,hidelines=///
 console.log("hello");
 // console.log("elo");
@@ -27,18 +26,20 @@ console.log("hello");
 /// console.log("why");
 ```
 
-
 ```javascript
 fetch("https://api.robbiecornock.com/ping");
 ```
 
 Mock response from server
+
 ```json
-{"response": "ping"}
+{ "response": "ping" }
 ```
+
 Mock failed response from server
+
 ```json
-{"error": "shouldnt happen", "ok": false}
+{ "error": "shouldnt happen", "ok": false }
 ```
 
 ```javascript
@@ -48,7 +49,7 @@ fetch("https://api.robbiecornock.com/");
 ///
 ///
 /// // fail:
-/// {"bad":"noo"}
+/// {{#include ./json/test.json}}
 ```
 
 ```json
