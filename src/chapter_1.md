@@ -13,16 +13,16 @@
 ```
 
 ```rust
-#use std::error::Error;
-#use std::collections::HashMap;
-#fn main() -> Result<(), Box<dyn Error>> {
+# use std::error::Error;
+# use std::collections::HashMap;
+# fn main() -> Result<(), Box<dyn Error>> {
     let resp = reqwest::get("https://httpbin.org/ip")
         .await?
         .json::<HashMap<String, String>>()
         .await?;
     println!("{:#?}", resp);
     return ()
-#}
+# }
 ```
 
 ```rust,editable
@@ -35,7 +35,10 @@ println!("body = {:?}", body);
 ```
 
 ```javascript,editable
-
     fetch("https://api.robbiecornock.com");
-    #console.log()
+    # console.log({
+    #    "response": "HELLO",
+    #    "method_sent": "GET",
+    #    "Time": Date.now()
+    # })
 ```
