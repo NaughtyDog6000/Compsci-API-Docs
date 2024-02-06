@@ -1,44 +1,11 @@
-# Chapter 2: Basic Routes & Setup
+# Chapter 2: Signin and Signup
 
-## Javascipt Exapmle for fetching from the API
+## Signin
 
-```javascript,editable
-fetch("https://api.robbiecornock.com");
-# console.log({
-#    "response": "HELLO",
-#    "method_sent": "GET",
-#    "Time": Date.now()
-# })
+```javascript
+fetch("https://")
 ```
 
-## HTTP Methods
 
-**GET** requests are used to fetch some info where no parameters / data is needed to be sent
-(in Javascript the method is optional for get requests)
+## Signup
 
-```javascript,editable
-fetch("https://api.robbiecornock.com/ping", {
-    method: "GET",
-});
-# console.log({
-# "response": "pong GET"
-# })
-```
-
-**POST** requests are commonly used for requests which have a body and need to upload some data, this is an example for how you would create a post request
-
-```javascript,editable
-fetch("https://api.robbiecornock.com/ping", {
-    method: "POST",
-});
-# console.log({
-#    "response": "pong GET"
-# })
-```
-
-```javascript,editable
-// This is a comment, and is ignored by the compiler
-// You can test this code by clicking the "Run" button over there ->
-
-console.log("Hello World");
-```
