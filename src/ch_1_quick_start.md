@@ -128,34 +128,16 @@ fetch("https://api.robbiecornock.com", {
 
 ### sending data
 
-### authorisation
-
-## Routes
-
-## Auth
+To send json data to the API you run `JSON.stringify()`, on the object and then put it in the `body` parameter of the fetch request.
 
 ```javascript
-fetch("https://api.robbiecornock.com/");
+fetch("https://api.robbiecornock.com/check_user", {
+  method: "POST",
+  mode: "cors",
+  body: JSON.stringify({ username: "nd6k" }),
+});
 ```
 
-Get Request:
-
-```json
-{
-  "Time": 1707224771,
-  "method_sent": "GET",
-  "response": "HELLO"
-}
-```
-
-Post Request:
-
-```json
-{
-  "Time": 1707224976,
-  "method_sent": "POST",
-  "response": "HELLO"
-}
-```
+## Auth
 
 [^note]: the example routes ("/" and "/ping") dont follow the format for simplicity.
