@@ -7,38 +7,50 @@
 ## Auth
 
 ```rust
-# fn main(){
     println!("Hello world!");
-# }
 ```
 
-```rust
-# use std::error::Error;
-# use std::collections::HashMap;
-# fn main() -> Result<(), Box<dyn Error>> {
-    let resp = reqwest::get("https://httpbin.org/ip")
-        .await?
-        .json::<HashMap<String, String>>()
-        .await?;
-    println!("{:#?}", resp);
-    return ()
-# }
-```
-
-```rust,editable
-let body = reqwest::get("https://www.rust-lang.org")
-    .await?
-    .text()
-    .await?;
-
-println!("body = {:?}", body);
-```
-
-```javascript,editable
+```javascript,editable,hidelines=///
+///const mock_response = {"reps": "fun" };
 fetch("https://api.robbiecornock.com/ping", {
     method: "GET",
 });
-# console.log({
-# "response": "pong GET"
-# })
+// mock response as fetch requests dont work in browser
+console.log(mock_response);
+```
+
+
+```javascript,hidelines=///
+console.log("hello");
+// console.log("elo");
+///console.log("fello");
+/// console.log("why");
+```
+
+
+```javascript
+fetch("https://api.robbiecornock.com/ping");
+```
+
+Mock response from server
+```json
+{"response": "ping"}
+```
+Mock failed response from server
+```json
+{"error": "shouldnt happen", "ok": false}
+```
+
+```javascript
+fetch("https://api.robbiecornock.com/");
+/// // success:
+/// { "fun": "daf" }
+///
+///
+/// // fail:
+/// {"bad":"noo"}
+```
+
+```json
+{{#include ./json/test.json }}
 ```
